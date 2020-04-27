@@ -69,17 +69,13 @@ int main(){
 	for (int i=0; i<numOfemployees; i++) 
 		Employees[i].read_data();
 
-	cout<< " Enter  \n 1 : To display all Employees , \n 2 : To display only Telecom dept Employees , \n 0 : to exit  "<< endl<<" ? : ";
-	cin >> command;
 
-	if (command==1) {
 		cout<< endl<< "----------All department Employees-----------"<<endl;
 		for (int i=0; i<numOfemployees; i++) 
 			Employees[i].display_data();
-	}
-	else if(command==2) {
+
 		display_data_telecom(Employees);
-	}
+
 	cout<<endl<<"---------------------Thank you-------------------"<<endl<<endl;
 
 }
