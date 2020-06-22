@@ -25,7 +25,7 @@ class String{
     }
 
     // Destructor *optional
-    ~String(){ cout<< "Obj is destroyed "<<endl; }
+    // ~String(){ cout<< "Obj is destroyed "<<endl; }
 
     // Declaration of concatenation ( + OP overloaded) func
     String operator+(String str2); 
@@ -65,9 +65,9 @@ int main(){
         result.Print();
     
     // initializing copyStr obj with myStr1 obj (copy constructor)
-    String copyStr(myStr1);  
-        cout << "copyStr obj  ==> ";
-        copyStr.Print();
+    // String copyStr(myStr1);  
+    //     cout << "copyStr obj  ==> ";
+    //     copyStr.Print();
 
 }
 

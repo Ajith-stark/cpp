@@ -32,4 +32,5 @@ int main(){
   print(myObj);
   myClass myObj2(myObj);
   print(myObj2);
-}		
+  return 0;
+  }		

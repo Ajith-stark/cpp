@@ -3,30 +3,6 @@
 using namespace std;
 
 
-// int main() {
-    //     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
-    //     unsigned int n =0;
-    //     cin >> n;
-    //     map<string, unsigned int> phoneBook;
-    //     for (int i=0 ; i<3 ; i++){
-    //         string name;
-    //         unsigned int ph=0;
-    //         cin >> name >> ph;
-    //         phoneBook[name]=ph;
-    //     }
-    //     cin.ignore();
-    //     while(true){
-    //         string name;
-    //         getline(cin , name);
-    //         if (name=="") break;
-    //         if (phoneBook[name]) cout<< name<<"="<<phoneBook[name] << endl;
-    //         else cout<< "Not found"<< endl;
-    //     }
-        
-
-    //     return 0;
-// }
-
 
 // vector<string> split_string(string);
 
@@ -179,12 +155,77 @@ using namespace std;
 //     return 0;
 // }
 
+class myClass{
+    int data=0;
+    public:
+    myClass& setVal(int);
+    myClass& printVal ();
+    ~myClass(){ cout<<"Destroyed"<<endl;}
+    myClass copy();
+};
+
+myClass& myClass::setVal(int d){
+    data=d;
+    return *this;
+}
+myClass& myClass::printVal(){
+    cout<<"Data : "<<data<<endl;
+    return *this;
+}
+
+myClass myClass::copy(){
+    return *this;
+}
+
+
+class myClass1{
+    int data=0;
+    public:
+    myClass1* setVal(int);
+    myClass1* printVal ();
+    ~myClass1(){
+        cout<<"Destroyed"<<endl;
+    }
+};
+
+myClass1* myClass1::setVal(int d){
+    data=d;
+    return this;
+}
+myClass1* myClass1::printVal(){
+    cout<<"Data : "<<data<<endl;
+    return this;
+}
+
+void printArrays(auto * elePtr ){
+    while(true){
+        auto d = *(elePtr++);
+        if (d=='\0') break;
+        cout << d <<", ";
+    }
+    cout<<endl;
+}
 int main(int argc, char const *argv[])
 {
+    // myClass object;
+    // object.setVal(4).printVal().setVal(100).printVal();
+    // // myClass1  obj;
+    // // myClass1 *ptr= &obj;
+    // // ptr->setVal(20)->printVal();
+    // myClass temp;
+    // temp = object.copy();
+    // temp.printVal();
+    // myClass s,t;
+    // t.setVal(405);
+    // s=t;
+    
+    // s.printVal();
 
-    int internals= (25+12)*0.8;
-    int ass = (1+2+3)/3;
-    int exam = 45;
-    cout << tab << (exam/2.0) + internals + ass <<endl;
-    return 0;
+    int arr[30]={3,6,8,6,47,58,264,25,46,785,78,255,59,2,5,88255,558,24,5,846};
+
+    // printArrays("arr");
+    string data="dscbb ";
+    string d="rrrrr";
+    data.substr();
+    cout  << tab << data <<tab <<d ;
 }

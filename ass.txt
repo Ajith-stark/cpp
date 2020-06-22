@@ -1,0 +1,55 @@
+Enter number of students : 2
+
+Enter name : Jhon doe
+Enter USN  : 1DA18TE909
+
+Enter Maths internals marks   : 21 18 0
+Enter Maths assignments marks : 5 5 5
+Enter exam marks : 75
+
+Enter Electronics internals marks   : 12 15 14
+Enter Electronics assignments marks : 5 4 5
+Enter exam marks : 65
+
+Enter Microcontroller internals marks   : 12 15 20
+Enter Microcontroller assignments marks : 5 5 5
+Enter exam marks : 46
+
+
+ Name            : Jhon doe       
+ USN             : 1DA18TE909     
+-------------------------------------------------------------------------------
+| Subjects        | CIE-1     | CIE-2     | CIE-3     | Final CIE | Grades    | 
+-------------------------------------------------------------------------------
+| Maths           | 21        | 18        | 0         | 36        | B         |
+| Electronics     | 12        | 15        | 14        | 27        | C         |
+| Microcontroller | 12        | 15        | 20        | 33        | D         |
+-------------------------------------------------------------------------------
+
+
+Enter name : Ryan
+Enter USN  : 1DA18TE808
+
+Enter Maths internals marks   : 10 10 21
+Enter Maths assignments marks :  4 5 4
+Enter exam marks : 86
+
+Enter Electronics internals marks   : 0 19 21
+Enter Electronics assignments marks : 4 4 5
+Enter exam marks : 76
+
+Enter Microcontroller internals marks   : 20 14 12
+Enter Microcontroller assignments marks : 5 5 5 
+Enter exam marks : 68
+
+
+ Name            : Ryan           
+ USN             : 1DA18TE808     
+-------------------------------------------------------------------------------
+| Subjects        | CIE-1     | CIE-2     | CIE-3     | Final CIE | Grades    | 
+-------------------------------------------------------------------------------
+| Maths           | 10        | 10        | 21        | 20        | C         |
+| Electronics     | 0         | 19        | 21        | 36        | B         |
+| Microcontroller | 20        | 14        | 12        | 32        | C         |
+-------------------------------------------------------------------------------
+

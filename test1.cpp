@@ -28,14 +28,14 @@ void Print(char const* ptrChar){
     strcpy(d,ptrChar);
     // cout << "\t"<<d<<endl;
 
-    return;
+    
 
     while (true){
         char d= *ptrChar++;  // char d= (*ptrchar++);
         if (d=='\0'){ break; }
         cout<< d<<endl ;
     }
-
+return;
 }
 int main(){
     int multi[][3]={{45,45,3},{4,8,7},{9,6,2},{8,6,5}};
